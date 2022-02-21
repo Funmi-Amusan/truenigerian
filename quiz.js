@@ -207,8 +207,8 @@ let questions = [
     {
         question: "Kaduna",
         choice1: "Minna",
-        choice3: "Ikeja",
-        choice2: "Kaduna",
+        choice2: "Ikeja",
+        choice3: "Kaduna",
         choice4: "Benin City",
         answer: 3,
     },
