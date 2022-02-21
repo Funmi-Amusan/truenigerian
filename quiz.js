@@ -14,7 +14,7 @@ let timerCounter
 let questions = [
     {
         question: "Abia",
-        choice1: "Oshogbo",
+        choice1: "Osogbo",
         choice2: "Yola",
         choice3: "Umuahia",
         choice4: "Uyo",
@@ -46,7 +46,7 @@ let questions = [
     },
     {
         question: "Abia",
-        choice1: "Oshogbo",
+        choice1: "Osogbo",
         choice2: "Yola",
         choice3: "Umuahia",
         choice4: "Uyo",
@@ -121,7 +121,7 @@ let questions = [
         choice1: "Akure",
         choice2: "Abeokuta",
         choice3: "Ikeja",
-        choice4: "Oshogbo",
+        choice4: "Osogbo",
         answer: 4,
     },
     {
@@ -306,7 +306,7 @@ let questions = [
         choice2: "Lagos",
         choice3: "Lekki",
         choice4: "Eko",
-        answer: 4,
+        answer: 1,
     },
     {
         question: "Ondo",
@@ -314,7 +314,7 @@ let questions = [
         choice2: "Akure",
         choice3: "Idanre",
         choice4: "Ondo",
-        answer: 4,
+        answer: 2,
     },
     {
         question: "Rivers",
@@ -323,6 +323,14 @@ let questions = [
         choice3: "Osogbo",
         choice4: "Port Harcourt",
         answer: 4,
+    },
+    {
+        question: "Kebbi",
+        choice1: "Benin City",
+        choice2: "Onitsha",
+        choice3: "Birnin Kebbi",
+        choice4: "Kebbi",
+        answer: 3,
     },
 ]
 
