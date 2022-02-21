@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+
+    <section class="wrapper">
+        <header class="flex space-between">
+            <div class="title">
+                <img src="img/state&capital.png" alt="">
+            </div>
+            <div class="">
+                <p>Timer</p>
+                <div class="countdown">
+                    <h2 class="timer"> 00:00:<span id="timer" >30</span> </h2>
+                    <h2 class="score" id="score" >00</h2>
+                </div>
+            </div>
+        </header>
+
+        <div class="question-container pd-y2">
+            <h1 id="question" class="fs-48">ABIA</h1>
+            <div class="options-container grid m-1">
+                <div class="option-container">
+                    <p class="option" data-number="1" id="option">Choice</p>
+                </div>
+                <div class="option-container">
+                    <p class="option" data-number="2" id="option">choicee</p>
+                </div>
+                <div class="option-container">
+                    <p class="option" data-number="3" id="option">Choicee</p>
+                </div>
+                <div class="option-container">
+                    <p class="option" data-number="4" id="option">Choiceee</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skip">
+            <button id="skipquestion" class="button-underline">Skip this question</button>
+        </div>
+    </section>
+</body>
+<script src="quiz.js"></script>
+</html>

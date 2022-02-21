@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home-container">
+
+            <section class="intro" id="firstpage">
+                <div class="grid container home">
+                    <div class="title center">
+                        <img src="img/state&capital.png" alt="">
+                    </div>
+                    <div class="map center">
+                        <img src="img/nigerianmap transparent.png" alt="">
+                    </div>
+                    <div class="center">
+                        <button id="playbtn" class="btn btn-green">Play Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="" id="secondpage" hidden>
+                <div class="info grid container">
+                    <div class="title center">
+                        <img src="img/state&capital.png" alt="">
+                    </div>
+                    <form action="" class="input-container center pd-2 start">
+                        <div class="input-name">
+                            <label for="name">Your name</label> 
+                            <br>
+                            <input type="text" name="name" id="username" required>
+                        </div>
+                        <div class="input-state">
+                            <label for="state">What state are you from</label>
+                            <br>
+                            <select name="state" id="userstate">
+                                <option value="Abia" data-capital="Umuaiha">Abia</option>
+                                <option value="Adamawa">Adamawa</option>
+                                <option value="Akwa Ibom">Akwa Ibom</option>
+                                <option value="Anambra">Anambra</option>
+                                <option value="Bauchi">Bauchi</option>
+                                <option value="Bayelsa">Bayelsa</option>
+                                <option value="Benue">Benue</option>
+                                <option value="Borno">Borno</option>
+                                <option value="Cross River">Cross River</option>
+                                <option value="Delta">Delta</option>
+                                <option value="Ebonyi">Ebonyi</option>
+                                <option value="Edo">Edo</option>
+                                <option value="Ekiti">Ekiti</option>
+                                <option value="Enugu">Enugu</option>
+                                <option value="Gombe">Gombe</option>
+                                <option value="Imo">Imo</option>
+                                <option value="Jigawa">Jigawa</option>
+                                <option value="Kaduna">Kaduna</option>
+                                <option value="Kano">Kano</option>
+                                <option value="Katsina">Katsina</option>
+                                <option value="Kebbi">Kebbi</option>
+                                <option value="Kogi">Kogi</option>
+                                <option value="Kwara">Kwara</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Nasarawa">Nasarawa</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Ogun">Ogun</option>
+                                <option value="Ondo">Ondo</option>
+                                <option value="Osun">Osun</option>
+                                <option value="Oyo">Oyo</option>
+                                <option value="Plateau">Plateau</option>
+                                <option value="Rivers">Rivers</option>
+                                <option value="Sokoto">Sokoto</option>
+                                <option value="Taraba">Taraba</option>
+                                <option value="Yobe">Yobe</option>
+                                <option value="Zamfara">Zamfara</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="center">
+                        <button id="storevar" class="btn btn-green">Let's go!</button>
+                    </div>
+                </div>
+            </section>
+
+    
+            <section class="intro" id="thirdpage" hidden>
+                <div class="grid container rules">
+                    <div class="title center">
+                            <img src="img/state&capital.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Hello, <span id="thename"> </span> from <span id="thestate"> </span>.</p>
+                        <p>This quiz is simple. How well do you know Nigeria?</p>
+                        <p>You have 60 seconds. Match as many states and capital as possible.
+                            And of course, you know that we know that you know that the 
+                            capital of <span id="thestateagain"> </span> is <span id="thecapital"> </span>. So we will never ask you that 😁!</p>
+                        <p>Make your state proud!</p>
+                        <div class="pd-y2">
+                            <a href="quiz.html" class="btn btn-green">I'm ready</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </div>
+</body>
+<script src="java.js"></script>
+</html>
