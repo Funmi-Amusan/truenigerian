@@ -1,0 +1,418 @@
+:root {
+    /* font-families */
+    --ff-lora: "lora", serif;
+    --ff-mulish: "mulish", serif;
+    --ff-roboto: "roboto", serif;
+
+    /* colors */
+    --accent-color: hsl(166,40%,34%); 
+    --line-grey: hsl(202,15%,90%);
+    --dark-grey: hsl(208,17%,67%);
+    --alert-red: hsl(351,62%,55%);
+    --brick-red: hsl(0,31%,53%);
+    --brick-pink: hsl(0,31%,83%); 
+    --text-color: hsl(208,25%,22%);
+    --purple-clr: hsl(245,89%,65%);
+    --body-color: #ffffff;
+    
+    /* font-sizes */
+    --fs-6: 0.4rem;
+    --fs-10: 0.625rem;
+    --fs-12: 0.75rem;
+    --fs-14: 0.875rem;
+    --fs-16: 1rem;
+    --fs-24: 1.5rem;
+    --fs-32: 2rem;
+    --fs-48: clamp(2.5rem, 4vh + 1rem, 5rem);
+
+  @media (min-width: 35em) {
+      :root {
+          --fs-24: 2.5rem;
+          --fs-16: 1.5rem;
+          --fs-14: 1.25rem;
+          --fs-400: 1rem;
+      }
+  }
+  
+  @media (min-width: 45em) {
+      :root {
+          /* font-sizes */
+          --fs-32: 6.25rem;
+          --fs-24: 3.5rem;
+          --fs-16: 2rem;
+          --fs-14: 1.75rem;
+          --fs-12: 1.125rem;
+      }
+  }
+  
+
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    max-width: 100vw;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+    width: 100vw;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
+    width: 100vw;
+}
+
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up the body */
+body {
+    background-color: var(--white);
+    font-family: var(--ff-mulish);
+    font-size: var(--fs-16);
+    width: 100vw;
+
+    position: relative;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+img { height: 100%;}
+
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+            /* TYPOGRAPHY */
+
+/* font-sizes */
+.fs-6 {font-size: var(--fs-6); }
+.fs-10 {font-size: var(--fs-10); }
+.fs-12 {font-size: var(--fs-12); }
+p {font-size: var(--fs-14); }
+.fs-16 {font-size: var(--fs-16); }
+.fs-24 {font-size: var(--fs-24); }
+.fs-32 {font-size: var(--fs-32); }
+.fs-48 {font-size: var(--fs-48); font-weight: 700;}
+
+
+/* font-families */
+.ff-lora { font-family: var(--ff-lora);}
+.ff-mulish { font-family: var(--ff-mulish);}
+
+
+.fs-32,
+.fs-48 {
+    line-height: 120%;
+}
+
+             /* COLORS */
+.bg-color { background-color: var(--body-color);}
+
+
+/* ------------------------------------ */
+/* ---------------- Reusable Utility Classes ---------*/
+/* ------------------------------------ */
+
+.flex { display: flex;}
+
+.column { flex-direction: column;}
+
+.grid { display: grid;}
+
+.container {
+    padding: 3em 0;
+}
+
+.sect-container { padding: 4em 0 12em 0;}
+
+.line-container { padding: 2em 0;}
+
+.line-m-top { margin-top: 1em 0;}
+
+.wrapper { padding: 12vh;}
+
+.space-between { justify-content: space-between;}
+
+.bold { font-weight: 700;}
+
+.uppercase { text-transform:uppercase;}
+
+.center { justify-content: center; justify-items: center; align-items: center;}
+
+.l-h { line-height: 2em;}
+
+.pd-05 { padding: 0.5em;}
+
+.pd-1 { padding: 1em;}
+
+.pd-2 { padding: 2em;}
+
+.pd-5 { padding: 5em;}
+
+.pd-y2 { padding: 2em 0;}
+
+.pd-inline { padding-inline: 2em;}
+
+.btn-margin { margin: 1em 0;}
+
+.m-2 { margin: 2em 0;}
+
+.m-1 { margin: 1em 0;}
+
+.m-05 { margin: 0.5em 0;}
+
+.mx-05 { margin: 0 0.5em;}
+
+.center-text { text-align: center;}
+
+.start-text { text-align: start;}
+
+.center {
+display: flex;
+flex-direction: column;
+justify-content: center;
+justify-items: center;
+align-items: center;
+}
+
+/* ------------------------------------ */
+/* ---------------- COMPONENTS ---------*/
+/* ------------------------------------ */
+
+.home-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-container section {
+    position: absolute;
+    width: 100%;
+    background-color: var(--body-color);
+}
+
+.home {
+    
+    grid-template-rows: 25% 65% 10%;
+    height: 100vh;
+}
+
+.info {
+    grid-template-rows: 20% 70% 10%;
+    height: 100vh;
+}
+
+.text {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.text p{
+    padding: 1em 0;
+}
+
+header {
+    height: 10vh;
+}
+
+.options-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em 13vw;
+}
+
+.option {
+    border: 2px solid var(--brick-pink);
+    color: var(--brick-red);
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.option:focus,
+.option:hover {
+    background-color: var(--brick-red);
+    border: none;
+    color: white;
+}
+
+
+
+
+.skip {
+    text-align: end;
+    margin: 3em 0;
+}
+
+
+/* ----------- BUTTONS -----------*/
+.btn {
+    padding: 0.5em;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.btn-green {
+    background-color: var(--accent-color);
+}
+
+.btn-purple {
+    background-color: var(--purple-clr);
+}
+
+.button-underline {
+    color: var(--alert-red);
+    border-bottom: 1px solid var(--alert-red);
+}
+
+.button-underline:focus,
+.button-underline:hover {
+    border-bottom: none;
+}
+
+.btns-cont {
+    width: max-content;
+    margin: auto;
+}
+
+.btns-cont a {
+    width: 100%;
+    text-align: center;
+}
+
+.correct {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+}
+
+.wrong {
+    background-color: var(--alert-red);
+    color: white;
+    border: none;
+}
+
+/* Toggle */
+.toggle {
+    margin: 0 1em;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.2em;
+    height: 1.7em;
+}
+
+.toggle-span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-grey);
+    transition: 400ms;
+    border-radius: 35px;
+}
+
+.switch input { display: none;}
+
+.toggle-span::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 5px;
+    bottom: 4px;
+    transition: 400ms;
+    background-color: #ffff;
+}
+
+.switch input:checked + .toggle-span {
+    background-color: var(--accent-color);
+}
+
+.switch input:checked + .toggle-span::before {
+    transform: translateX(1.4em);
+}
