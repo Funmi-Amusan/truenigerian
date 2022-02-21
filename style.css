@@ -307,13 +307,14 @@ header {
     cursor: pointer;
 }
 
-
+/*
 .option:focus,
 .option:hover {
     background-color: var(--brick-red);
     border: none;
     color: white;
 }
+*/
 
 
 
