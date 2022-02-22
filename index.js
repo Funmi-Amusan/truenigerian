@@ -43,16 +43,12 @@ function letsPlay() {
 
     
     })
-
-  
-    console.log(availableQuestions)
     
     firstPage.hidden = true;
     secondPage.hidden = true;
     thirdPage.hidden = false;
 }
 
-letsPlay()
 
 
 
