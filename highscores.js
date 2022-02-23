@@ -1,13 +1,12 @@
 const highScoresList = document.querySelector('#highScoresList')
 const highScores = JSON.parse(localStorage.getItem("highScores")) || []
 
-highScores.sort()
-console.log("highScores.sort()")
+
 
 
 highScoresList.innerHTML =
 highScores.map(score => {
-    return `<li class="high-score">${score.name} - ${score.score}</li>`
+    return `<div class="high-score"> <div> ${score.name} </div> <div> ${score.state} </div>  <div> ${score.score} </div> <div> ${score.timeAgo} </div> </div>`
 }).join("")
 
 let allScores = highScores.map(score => {
@@ -18,4 +17,3 @@ console.log(allScores)
 let arrangedScores = allScores.sort()
 
 console.log(arrangedScores)
-

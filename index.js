@@ -22,9 +22,14 @@ function letsPlay() {
     let player = userName.value;
     sessionStorage.setItem("playerName", userName.value)
 
+    let playerState = userState.value;
+    sessionStorage.setItem("playerState", userState.value)
+    
     theName.innerHTML = player;
-    theState.innerHTML = userState.value;
-    theStateAgain.innerHTML = userState.value;
+    theState.innerHTML = playerState;
+    // console.log(userState.innerHTML)
+    theStateAgain.innerHTML = playerState;
+      
 
     states.forEach(state => {
         let currentQuestion = {}
@@ -34,25 +39,24 @@ function letsPlay() {
         /* console.log(Index) */
         let availableQuestions = capital
         let availableQuestion = availableQuestions
-        console.log(availableQuestions) 
+        /* console.log(availableQuestions)  */
         currentQuestion = availableQuestions[Index]
-        console.log(availableQuestions[Index])
-        
+        /* console.log(availableQuestions[Index]) */
+        let buba = [capital[0], capital[1], capital[2], capital[3], capital[4], capital[5]]
+        // console.log([buba])
        
         theCapital.innerHTML = currentQuestion
 
+        /* console.log(indexNumber) */
+
     
     })
+    
     
     firstPage.hidden = true;
     secondPage.hidden = true;
     thirdPage.hidden = false;
 }
-
-
-
-
-
 
 
 
@@ -64,3 +68,4 @@ firstBtn.onclick = function() {
     firstPage.hidden = true;
     secondPage.hidden = false;
   }
+

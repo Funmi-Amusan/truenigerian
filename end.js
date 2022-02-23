@@ -12,10 +12,13 @@ saveHighScores = () => {
     console.log("show my score");
     
     const player = sessionStorage.getItem("playerName");
+    const playerState = sessionStorage.getItem("playerState");
     
     const score = {
         score: mostRecentScore,
-        name: player
+        name: player,
+        state: playerState,
+        timeAgo: "Sometime Ago"
     }
 
 
