@@ -214,7 +214,9 @@ p {font-size: var(--fs-14); }
 
 .bold { font-weight: 700;}
 
-.uppercase { text-transform: capitalize;  }
+.uppercase { text-transform: uppercase;  }
+
+.capitalize{ text-transform: capitalize;  }
 
 .center { justify-content: center; justify-items: center; align-items: center;}
 
@@ -310,16 +312,17 @@ header {
     padding: 1em;
     text-align: center;
     cursor: pointer;
+    box-shadow: 1px 3px 6px -1px rgba(0,0,0,0.24);
+-webkit-box-shadow: 1px 3px 6px -1px rgba(0,0,0,0.24);
+-moz-box-shadow: 1px 3px 6px -1px rgba(0,0,0,0.24);
 }
 
-/*
+
 .option:focus,
 .option:hover {
-    background-color: var(--brick-red);
-    border: none;
-    color: white;
+    box-shadow: none;
 }
-*/
+
 
 
 
@@ -417,7 +420,7 @@ header {
     border-radius: 35px;
 }
 
-.switch input { display: none;}
+input[type="checkbox"] { }
 
 .toggle-span::before {
     position: absolute;
@@ -431,11 +434,11 @@ header {
     background-color: #ffff;
 }
 
-.switch input:checked + .toggle-span {
+input:checked[type="checkbox"] + .toggle-span {
     background-color: var(--accent-color);
 }
 
-.switch input:checked + .toggle-span::before {
+input:checked[type="checkbox"] + .toggle-span::before {
     transform: translateX(1.4em);
 }
 
