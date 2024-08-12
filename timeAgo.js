@@ -1,5 +1,4 @@
 
-
 /*----------------- Time Ago Functionality ------------------------*/
 // set HTML
 var date = new Date();
