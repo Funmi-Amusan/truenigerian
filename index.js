@@ -1,5 +1,4 @@
 import { states } from "./states";
-/* ------------- Name and State  -------------*/
 
 const firstBtn = document.getElementById("playbtn");
 const secondBtn = document.querySelector("#storevar");
